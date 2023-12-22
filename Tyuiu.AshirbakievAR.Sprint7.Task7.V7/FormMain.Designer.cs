@@ -61,6 +61,7 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7
             this.btnHelp.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHelp.FlatAppearance.BorderSize = 0;
             this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnHelp.ForeColor = System.Drawing.Color.White;
             this.btnHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHelp.Location = new System.Drawing.Point(0, 200);
@@ -79,6 +80,7 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7
             this.brtAboutUs.Dock = System.Windows.Forms.DockStyle.Top;
             this.brtAboutUs.FlatAppearance.BorderSize = 0;
             this.brtAboutUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.brtAboutUs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.brtAboutUs.ForeColor = System.Drawing.Color.White;
             this.brtAboutUs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.brtAboutUs.Location = new System.Drawing.Point(0, 140);
@@ -97,6 +99,7 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7
             this.btnProducts.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProducts.FlatAppearance.BorderSize = 0;
             this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnProducts.ForeColor = System.Drawing.Color.White;
             this.btnProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProducts.Location = new System.Drawing.Point(0, 80);

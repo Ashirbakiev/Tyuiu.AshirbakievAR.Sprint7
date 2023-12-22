@@ -39,13 +39,13 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7
         {
             if (button != null)
             {
-                if (currentButton == (Button)button)
+                if (currentButton != (Button)button)
                 {
                     DisableButton();
 
                     Color color = SelectThemeColor();
                     currentButton = (Button)button;
-                    currentButton.BackColor = Color.White;
+                    currentButton.BackColor = color;
                     currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
                     panelTitleBar.BackColor = color;
                     panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
