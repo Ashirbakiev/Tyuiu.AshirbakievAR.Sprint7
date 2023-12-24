@@ -31,13 +31,12 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7
         {
             this.panelMainMenu = new System.Windows.Forms.Panel();
             this.btnHelp = new System.Windows.Forms.Button();
-            this.brtAboutUs = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.lblTittle = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panelDesktopPanel = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panelMainMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -47,7 +46,6 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7
             // 
             this.panelMainMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panelMainMenu.Controls.Add(this.btnHelp);
-            this.panelMainMenu.Controls.Add(this.brtAboutUs);
             this.panelMainMenu.Controls.Add(this.btnProducts);
             this.panelMainMenu.Controls.Add(this.panelLogo);
             this.panelMainMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -64,35 +62,16 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7
             this.btnHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnHelp.ForeColor = System.Drawing.Color.White;
             this.btnHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHelp.Location = new System.Drawing.Point(0, 200);
+            this.btnHelp.Location = new System.Drawing.Point(0, 140);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnHelp.Size = new System.Drawing.Size(220, 60);
             this.btnHelp.TabIndex = 3;
-            this.btnHelp.Text = "   Product";
+            this.btnHelp.Text = "   Help";
             this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHelp.UseVisualStyleBackColor = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
-            // 
-            // brtAboutUs
-            // 
-            this.brtAboutUs.Dock = System.Windows.Forms.DockStyle.Top;
-            this.brtAboutUs.FlatAppearance.BorderSize = 0;
-            this.brtAboutUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.brtAboutUs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.brtAboutUs.ForeColor = System.Drawing.Color.White;
-            this.brtAboutUs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.brtAboutUs.Location = new System.Drawing.Point(0, 140);
-            this.brtAboutUs.Name = "brtAboutUs";
-            this.brtAboutUs.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.brtAboutUs.Size = new System.Drawing.Size(220, 60);
-            this.brtAboutUs.TabIndex = 2;
-            this.brtAboutUs.Text = "   Product";
-            this.brtAboutUs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.brtAboutUs.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.brtAboutUs.UseVisualStyleBackColor = true;
-            this.brtAboutUs.Click += new System.EventHandler(this.brtAboutUs_Click);
             // 
             // btnProducts
             // 
@@ -116,7 +95,7 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.panelLogo.Controls.Add(this.label1);
+            this.panelLogo.Controls.Add(this.label2);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
@@ -145,18 +124,6 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7
             this.lblTittle.TabIndex = 0;
             this.lblTittle.Text = "HOME";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(68, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
-            // 
             // panelDesktopPanel
             // 
             this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -164,6 +131,18 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7
             this.panelDesktopPanel.Name = "panelDesktopPanel";
             this.panelDesktopPanel.Size = new System.Drawing.Size(864, 461);
             this.panelDesktopPanel.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(8, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(209, 26);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "House management";
             // 
             // FormMain
             // 
@@ -190,11 +169,10 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7
         private System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Button btnHelp;
-        private System.Windows.Forms.Button brtAboutUs;
         private System.Windows.Forms.Panel panelTitleBar;
         private System.Windows.Forms.Label lblTittle;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelDesktopPanel;
+        private System.Windows.Forms.Label label2;
     }
 }
 

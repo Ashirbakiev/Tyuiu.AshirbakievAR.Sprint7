@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Lib;
+
 
 namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
 {
@@ -16,7 +18,7 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
         public BindingList<Product> productList;
         private BindingSource bindingSource;
         private SortOrder currentSortOrder = SortOrder.Ascending;
-
+        DataService ds = new DataService();
         public class Product
         {
             public int Apartment { get; set; }
@@ -60,6 +62,8 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
             dataGridViewInfo.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
             textBoxSearch.TextChanged += textBox_Search_AAR_TextChanged;
+            comboBoxSortInput.SelectedIndex = 0;
+            comboBoxChart.SelectedIndex = 0;
         }
 
         
@@ -108,7 +112,7 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
             try
             {
                 OpenFileDialog openFileDialog = new OpenFileDialog();
-                openFileDialog.Filter = "CSV files (*.csv)|*.csv|All files (*.*)|*.*";
+                openFileDialog.Filter = "Значения, разделенные запятыми(* .csv)|*.csv|Все фалы(*.*)|*.*";
                 openFileDialog.Title = "Выберите CSV файл для открытия";
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -119,7 +123,7 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
                     string[] lines = File.ReadAllLines(filePath);
 
                     // Парсим заголовки столбцов
-                    string[] headers = lines[0].Split(',');
+                    string[] headers = lines[0].Split(';');
 
                     // Очищаем старые данные в BindingList
                     productList.Clear();
@@ -127,7 +131,7 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
                     // Заполняем BindingList данными из файла
                     for (int i = 1; i < lines.Length; i++)
                     {
-                        string[] values = lines[i].Split(',');
+                        string[] values = lines[i].Split(';');
                         productList.Add(new Product {
                             Apartment = Convert.ToInt32(values[0]),
                             Entrance = Convert.ToInt32(values[1]),
@@ -174,7 +178,7 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
 
 
                 // Создаем строку для записи заголовков столбцов
-                string header = string.Join(",", dataGridViewInfo.Columns.Cast<DataGridViewColumn>().Select(column => column.HeaderText));
+                string header = string.Join(";", dataGridViewInfo.Columns.Cast<DataGridViewColumn>().Select(column => column.HeaderText));
 
                 // Создаем строки для каждой записи данных
                 List<string> lines = new List<string>();
@@ -182,7 +186,7 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
                 {
                     if (!row.IsNewRow)
                     {
-                        string line = string.Join(",", row.Cells.Cast<DataGridViewCell>().Select(cell => cell.Value.ToString()));
+                        string line = string.Join(";", row.Cells.Cast<DataGridViewCell>().Select(cell => cell.Value.ToString()));
                         lines.Add(line);
                     }
                 }
@@ -245,7 +249,7 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
         {
             try
             {
-                string sortName = textBoxSortInput.Text;
+                string sortName = comboBoxSortInput.SelectedItem.ToString(); ; ;
                 SortDataGridViewByColumn(sortName);
             }
 
@@ -317,5 +321,58 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
                 MessageBox.Show("Выберите строку для удаления", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void buttonChart_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                chart1.Series.Clear();
+                if (comboBoxChart.SelectedItem.ToString() == "Area")
+                {
+                    chart1.Series.Add("UsefulareaMax");
+                    chart1.Series.Add("UsefulareaMin");
+                    chart1.Series.Add("UsefulareaAverege");
+
+                    chart1.Series.Add("FullareaMax");
+                    chart1.Series.Add("FullareaMin");
+                    chart1.Series.Add("FullareaAverege");
+                    int row = dataGridViewInfo.RowCount;
+                    int[] matrix = new int[row - 1];
+                    int[] matrix2 = new int[row - 1];
+                    for (int i = 0; i < row - 1; i++)
+                    {
+                        matrix[i] = Convert.ToInt32(dataGridViewInfo.Rows[i].Cells[2].Value);
+                        matrix2[i] = Convert.ToInt32(dataGridViewInfo.Rows[i].Cells[3].Value);
+                    }
+
+                    chart1.Series["UsefulareaMax"].Points.AddXY("", ds.Max(matrix));
+                    chart1.Series["UsefulareaAverege"].Points.AddXY("", ds.Avarege(matrix));
+                    chart1.Series["UsefulareaMin"].Points.AddXY("", ds.Min(matrix));
+
+                    chart1.Series["FullareaMax"].Points.AddXY("", ds.Max(matrix2));
+                    chart1.Series["FullareaMin"].Points.AddXY("", ds.Avarege(matrix2));
+                    chart1.Series["FullareaAverege"].Points.AddXY("", ds.Min(matrix2));
+                }
+                else
+                {
+                    chart1.Series.Add("Dept");
+                    chart1.Series.Add("No Dept");
+                    int row = dataGridViewInfo.RowCount;
+                    bool[] matrix = new bool[row - 1];
+                    for (int i = 0; i < row - 1; i++)
+                    {
+                        matrix[i] = Convert.ToBoolean(dataGridViewInfo.Rows[i].Cells[9].Value);
+                    }
+                    chart1.Series["Dept"].Points.AddXY("", ds.Dept(matrix));
+                    chart1.Series["No Dept"].Points.AddXY("", ds.NoDept(matrix));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка при вводе данных: " + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+        
     }
 }

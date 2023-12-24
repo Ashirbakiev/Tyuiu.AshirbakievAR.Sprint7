@@ -88,10 +88,7 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7
             OpenChildForm(new Forms.FormProducts(), sender);
         }
 
-        private void brtAboutUs_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FormUser(), sender);
-        }
+
 
         private void btnHelp_Click(object sender, EventArgs e)
         {
