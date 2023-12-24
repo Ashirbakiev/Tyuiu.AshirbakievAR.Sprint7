@@ -29,11 +29,11 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.checkBoxDebt = new System.Windows.Forms.CheckBox();
+            this.checkBoxDebt_AAR = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -41,45 +41,45 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxChildren = new System.Windows.Forms.TextBox();
-            this.textBoxMembers = new System.Windows.Forms.TextBox();
+            this.textBoxChildren_AAR = new System.Windows.Forms.TextBox();
+            this.textBoxMembers_AAR = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBoxDate = new System.Windows.Forms.TextBox();
-            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.textBoxDate_AAR = new System.Windows.Forms.TextBox();
+            this.textBoxName_AAR = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxUsefularea = new System.Windows.Forms.TextBox();
-            this.textBoxRooms = new System.Windows.Forms.TextBox();
-            this.textBoxFullarea = new System.Windows.Forms.TextBox();
-            this.textBoxEntrance = new System.Windows.Forms.TextBox();
-            this.textBoxApartment = new System.Windows.Forms.TextBox();
-            this.buttonDelete = new System.Windows.Forms.Button();
-            this.buttonSaveFile = new System.Windows.Forms.Button();
-            this.buttonOpenFile = new System.Windows.Forms.Button();
-            this.buttonAdd = new System.Windows.Forms.Button();
+            this.textBoxUsefularea_AAR = new System.Windows.Forms.TextBox();
+            this.textBoxRooms_AAR = new System.Windows.Forms.TextBox();
+            this.textBoxFullarea_AAR = new System.Windows.Forms.TextBox();
+            this.textBoxEntrance_AAR = new System.Windows.Forms.TextBox();
+            this.textBoxApartment_AAR = new System.Windows.Forms.TextBox();
+            this.buttonDelete_AAR = new System.Windows.Forms.Button();
+            this.buttonSaveFile_AAR = new System.Windows.Forms.Button();
+            this.buttonOpenFile_AAR = new System.Windows.Forms.Button();
+            this.buttonAdd_AAR = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBoxChart = new System.Windows.Forms.ComboBox();
+            this.comboBoxChart_AAR = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.buttonChart = new System.Windows.Forms.Button();
-            this.comboBoxSortInput = new System.Windows.Forms.ComboBox();
+            this.comboBoxSortInput_AAR = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBoxSearch = new System.Windows.Forms.TextBox();
-            this.buttonSort = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.textBoxSearch_AAR = new System.Windows.Forms.TextBox();
+            this.buttonSort_AAR = new System.Windows.Forms.Button();
+            this.button5_AAR = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.dataGridViewInfo = new System.Windows.Forms.DataGridView();
+            this.dataGridViewInfo_AAR = new System.Windows.Forms.DataGridView();
             this.splitter1 = new System.Windows.Forms.Splitter();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart_AAR = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInfo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInfo_AAR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_AAR)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.checkBoxDebt);
+            this.panel1.Controls.Add(this.checkBoxDebt_AAR);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label5);
@@ -87,36 +87,36 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBoxChildren);
-            this.panel1.Controls.Add(this.textBoxMembers);
+            this.panel1.Controls.Add(this.textBoxChildren_AAR);
+            this.panel1.Controls.Add(this.textBoxMembers_AAR);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBoxDate);
-            this.panel1.Controls.Add(this.textBoxName);
+            this.panel1.Controls.Add(this.textBoxDate_AAR);
+            this.panel1.Controls.Add(this.textBoxName_AAR);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBoxUsefularea);
-            this.panel1.Controls.Add(this.textBoxRooms);
-            this.panel1.Controls.Add(this.textBoxFullarea);
-            this.panel1.Controls.Add(this.textBoxEntrance);
-            this.panel1.Controls.Add(this.textBoxApartment);
-            this.panel1.Controls.Add(this.buttonDelete);
-            this.panel1.Controls.Add(this.buttonSaveFile);
-            this.panel1.Controls.Add(this.buttonOpenFile);
-            this.panel1.Controls.Add(this.buttonAdd);
+            this.panel1.Controls.Add(this.textBoxUsefularea_AAR);
+            this.panel1.Controls.Add(this.textBoxRooms_AAR);
+            this.panel1.Controls.Add(this.textBoxFullarea_AAR);
+            this.panel1.Controls.Add(this.textBoxEntrance_AAR);
+            this.panel1.Controls.Add(this.textBoxApartment_AAR);
+            this.panel1.Controls.Add(this.buttonDelete_AAR);
+            this.panel1.Controls.Add(this.buttonSaveFile_AAR);
+            this.panel1.Controls.Add(this.buttonOpenFile_AAR);
+            this.panel1.Controls.Add(this.buttonAdd_AAR);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(230, 450);
             this.panel1.TabIndex = 4;
             // 
-            // checkBoxDebt
+            // checkBoxDebt_AAR
             // 
-            this.checkBoxDebt.AutoSize = true;
-            this.checkBoxDebt.Location = new System.Drawing.Point(12, 251);
-            this.checkBoxDebt.Name = "checkBoxDebt";
-            this.checkBoxDebt.Size = new System.Drawing.Size(181, 17);
-            this.checkBoxDebt.TabIndex = 27;
-            this.checkBoxDebt.Text = "задолженносьт по квартплате";
-            this.checkBoxDebt.UseVisualStyleBackColor = true;
+            this.checkBoxDebt_AAR.AutoSize = true;
+            this.checkBoxDebt_AAR.Location = new System.Drawing.Point(12, 251);
+            this.checkBoxDebt_AAR.Name = "checkBoxDebt_AAR";
+            this.checkBoxDebt_AAR.Size = new System.Drawing.Size(181, 17);
+            this.checkBoxDebt_AAR.TabIndex = 27;
+            this.checkBoxDebt_AAR.Text = "задолженносьт по квартплате";
+            this.checkBoxDebt_AAR.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -181,19 +181,19 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
             this.label3.TabIndex = 19;
             this.label3.Text = "Общая площадь";
             // 
-            // textBoxChildren
+            // textBoxChildren_AAR
             // 
-            this.textBoxChildren.Location = new System.Drawing.Point(12, 225);
-            this.textBoxChildren.Name = "textBoxChildren";
-            this.textBoxChildren.Size = new System.Drawing.Size(92, 20);
-            this.textBoxChildren.TabIndex = 17;
+            this.textBoxChildren_AAR.Location = new System.Drawing.Point(12, 225);
+            this.textBoxChildren_AAR.Name = "textBoxChildren_AAR";
+            this.textBoxChildren_AAR.Size = new System.Drawing.Size(92, 20);
+            this.textBoxChildren_AAR.TabIndex = 17;
             // 
-            // textBoxMembers
+            // textBoxMembers_AAR
             // 
-            this.textBoxMembers.Location = new System.Drawing.Point(110, 186);
-            this.textBoxMembers.Name = "textBoxMembers";
-            this.textBoxMembers.Size = new System.Drawing.Size(92, 20);
-            this.textBoxMembers.TabIndex = 16;
+            this.textBoxMembers_AAR.Location = new System.Drawing.Point(110, 186);
+            this.textBoxMembers_AAR.Name = "textBoxMembers_AAR";
+            this.textBoxMembers_AAR.Size = new System.Drawing.Size(92, 20);
+            this.textBoxMembers_AAR.TabIndex = 16;
             // 
             // label2
             // 
@@ -204,19 +204,19 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
             this.label2.TabIndex = 26;
             this.label2.Text = "Номер квартиры";
             // 
-            // textBoxDate
+            // textBoxDate_AAR
             // 
-            this.textBoxDate.Location = new System.Drawing.Point(12, 186);
-            this.textBoxDate.Name = "textBoxDate";
-            this.textBoxDate.Size = new System.Drawing.Size(92, 20);
-            this.textBoxDate.TabIndex = 15;
+            this.textBoxDate_AAR.Location = new System.Drawing.Point(12, 186);
+            this.textBoxDate_AAR.Name = "textBoxDate_AAR";
+            this.textBoxDate_AAR.Size = new System.Drawing.Size(92, 20);
+            this.textBoxDate_AAR.TabIndex = 15;
             // 
-            // textBoxName
+            // textBoxName_AAR
             // 
-            this.textBoxName.Location = new System.Drawing.Point(110, 147);
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(92, 20);
-            this.textBoxName.TabIndex = 14;
+            this.textBoxName_AAR.Location = new System.Drawing.Point(110, 147);
+            this.textBoxName_AAR.Name = "textBoxName_AAR";
+            this.textBoxName_AAR.Size = new System.Drawing.Size(92, 20);
+            this.textBoxName_AAR.TabIndex = 14;
             // 
             // label1
             // 
@@ -227,113 +227,113 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
             this.label1.TabIndex = 18;
             this.label1.Text = "Номер подъезда";
             // 
-            // textBoxUsefularea
+            // textBoxUsefularea_AAR
             // 
-            this.textBoxUsefularea.Location = new System.Drawing.Point(110, 108);
-            this.textBoxUsefularea.Name = "textBoxUsefularea";
-            this.textBoxUsefularea.Size = new System.Drawing.Size(92, 20);
-            this.textBoxUsefularea.TabIndex = 13;
+            this.textBoxUsefularea_AAR.Location = new System.Drawing.Point(110, 108);
+            this.textBoxUsefularea_AAR.Name = "textBoxUsefularea_AAR";
+            this.textBoxUsefularea_AAR.Size = new System.Drawing.Size(92, 20);
+            this.textBoxUsefularea_AAR.TabIndex = 13;
             // 
-            // textBoxRooms
+            // textBoxRooms_AAR
             // 
-            this.textBoxRooms.Location = new System.Drawing.Point(12, 147);
-            this.textBoxRooms.Name = "textBoxRooms";
-            this.textBoxRooms.Size = new System.Drawing.Size(92, 20);
-            this.textBoxRooms.TabIndex = 12;
+            this.textBoxRooms_AAR.Location = new System.Drawing.Point(12, 147);
+            this.textBoxRooms_AAR.Name = "textBoxRooms_AAR";
+            this.textBoxRooms_AAR.Size = new System.Drawing.Size(92, 20);
+            this.textBoxRooms_AAR.TabIndex = 12;
             // 
-            // textBoxFullarea
+            // textBoxFullarea_AAR
             // 
-            this.textBoxFullarea.Location = new System.Drawing.Point(12, 108);
-            this.textBoxFullarea.Name = "textBoxFullarea";
-            this.textBoxFullarea.Size = new System.Drawing.Size(92, 20);
-            this.textBoxFullarea.TabIndex = 11;
+            this.textBoxFullarea_AAR.Location = new System.Drawing.Point(12, 108);
+            this.textBoxFullarea_AAR.Name = "textBoxFullarea_AAR";
+            this.textBoxFullarea_AAR.Size = new System.Drawing.Size(92, 20);
+            this.textBoxFullarea_AAR.TabIndex = 11;
             // 
-            // textBoxEntrance
+            // textBoxEntrance_AAR
             // 
-            this.textBoxEntrance.Location = new System.Drawing.Point(110, 69);
-            this.textBoxEntrance.Name = "textBoxEntrance";
-            this.textBoxEntrance.Size = new System.Drawing.Size(92, 20);
-            this.textBoxEntrance.TabIndex = 10;
+            this.textBoxEntrance_AAR.Location = new System.Drawing.Point(110, 69);
+            this.textBoxEntrance_AAR.Name = "textBoxEntrance_AAR";
+            this.textBoxEntrance_AAR.Size = new System.Drawing.Size(92, 20);
+            this.textBoxEntrance_AAR.TabIndex = 10;
             // 
-            // textBoxApartment
+            // textBoxApartment_AAR
             // 
-            this.textBoxApartment.Location = new System.Drawing.Point(12, 69);
-            this.textBoxApartment.Name = "textBoxApartment";
-            this.textBoxApartment.Size = new System.Drawing.Size(92, 20);
-            this.textBoxApartment.TabIndex = 9;
+            this.textBoxApartment_AAR.Location = new System.Drawing.Point(12, 69);
+            this.textBoxApartment_AAR.Name = "textBoxApartment_AAR";
+            this.textBoxApartment_AAR.Size = new System.Drawing.Size(92, 20);
+            this.textBoxApartment_AAR.TabIndex = 9;
             // 
-            // buttonDelete
+            // buttonDelete_AAR
             // 
-            this.buttonDelete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonDelete.Location = new System.Drawing.Point(110, 323);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(92, 42);
-            this.buttonDelete.TabIndex = 7;
-            this.buttonDelete.Text = "Удалить";
-            this.buttonDelete.UseVisualStyleBackColor = true;
-            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            this.buttonDelete_AAR.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonDelete_AAR.Location = new System.Drawing.Point(110, 323);
+            this.buttonDelete_AAR.Name = "buttonDelete_AAR";
+            this.buttonDelete_AAR.Size = new System.Drawing.Size(92, 42);
+            this.buttonDelete_AAR.TabIndex = 7;
+            this.buttonDelete_AAR.Text = "Удалить";
+            this.buttonDelete_AAR.UseVisualStyleBackColor = true;
+            this.buttonDelete_AAR.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
-            // buttonSaveFile
+            // buttonSaveFile_AAR
             // 
-            this.buttonSaveFile.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonSaveFile.Location = new System.Drawing.Point(110, 371);
-            this.buttonSaveFile.Name = "buttonSaveFile";
-            this.buttonSaveFile.Size = new System.Drawing.Size(92, 42);
-            this.buttonSaveFile.TabIndex = 6;
-            this.buttonSaveFile.Text = "Сохранить файл";
-            this.buttonSaveFile.UseVisualStyleBackColor = true;
-            this.buttonSaveFile.Click += new System.EventHandler(this.buttonSaveFile_Click);
+            this.buttonSaveFile_AAR.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonSaveFile_AAR.Location = new System.Drawing.Point(110, 371);
+            this.buttonSaveFile_AAR.Name = "buttonSaveFile_AAR";
+            this.buttonSaveFile_AAR.Size = new System.Drawing.Size(92, 42);
+            this.buttonSaveFile_AAR.TabIndex = 6;
+            this.buttonSaveFile_AAR.Text = "Сохранить файл";
+            this.buttonSaveFile_AAR.UseVisualStyleBackColor = true;
+            this.buttonSaveFile_AAR.Click += new System.EventHandler(this.buttonSaveFile_Click);
             // 
-            // buttonOpenFile
+            // buttonOpenFile_AAR
             // 
-            this.buttonOpenFile.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonOpenFile.Location = new System.Drawing.Point(12, 371);
-            this.buttonOpenFile.Name = "buttonOpenFile";
-            this.buttonOpenFile.Size = new System.Drawing.Size(92, 42);
-            this.buttonOpenFile.TabIndex = 8;
-            this.buttonOpenFile.Text = "Открыть  Файл";
-            this.buttonOpenFile.UseVisualStyleBackColor = true;
-            this.buttonOpenFile.Click += new System.EventHandler(this.buttonOpenFile_Click);
+            this.buttonOpenFile_AAR.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonOpenFile_AAR.Location = new System.Drawing.Point(12, 371);
+            this.buttonOpenFile_AAR.Name = "buttonOpenFile_AAR";
+            this.buttonOpenFile_AAR.Size = new System.Drawing.Size(92, 42);
+            this.buttonOpenFile_AAR.TabIndex = 8;
+            this.buttonOpenFile_AAR.Text = "Открыть  Файл";
+            this.buttonOpenFile_AAR.UseVisualStyleBackColor = true;
+            this.buttonOpenFile_AAR.Click += new System.EventHandler(this.buttonOpenFile_Click);
             // 
-            // buttonAdd
+            // buttonAdd_AAR
             // 
-            this.buttonAdd.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonAdd.Location = new System.Drawing.Point(12, 323);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(92, 42);
-            this.buttonAdd.TabIndex = 5;
-            this.buttonAdd.Text = "Добавить";
-            this.buttonAdd.UseVisualStyleBackColor = true;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            this.buttonAdd_AAR.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonAdd_AAR.Location = new System.Drawing.Point(12, 323);
+            this.buttonAdd_AAR.Name = "buttonAdd_AAR";
+            this.buttonAdd_AAR.Size = new System.Drawing.Size(92, 42);
+            this.buttonAdd_AAR.TabIndex = 5;
+            this.buttonAdd_AAR.Text = "Добавить";
+            this.buttonAdd_AAR.UseVisualStyleBackColor = true;
+            this.buttonAdd_AAR.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.comboBoxChart);
+            this.panel2.Controls.Add(this.comboBoxChart_AAR);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.buttonChart);
-            this.panel2.Controls.Add(this.comboBoxSortInput);
+            this.panel2.Controls.Add(this.comboBoxSortInput_AAR);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.textBoxSearch);
-            this.panel2.Controls.Add(this.buttonSort);
-            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.textBoxSearch_AAR);
+            this.panel2.Controls.Add(this.buttonSort_AAR);
+            this.panel2.Controls.Add(this.button5_AAR);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(230, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(570, 105);
             this.panel2.TabIndex = 5;
             // 
-            // comboBoxChart
+            // comboBoxChart_AAR
             // 
-            this.comboBoxChart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxChart.FormattingEnabled = true;
-            this.comboBoxChart.Items.AddRange(new object[] {
+            this.comboBoxChart_AAR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxChart_AAR.FormattingEnabled = true;
+            this.comboBoxChart_AAR.Items.AddRange(new object[] {
             "Area",
             "Dept"});
-            this.comboBoxChart.Location = new System.Drawing.Point(6, 68);
-            this.comboBoxChart.Name = "comboBoxChart";
-            this.comboBoxChart.Size = new System.Drawing.Size(101, 21);
-            this.comboBoxChart.TabIndex = 12;
+            this.comboBoxChart_AAR.Location = new System.Drawing.Point(6, 68);
+            this.comboBoxChart_AAR.Name = "comboBoxChart_AAR";
+            this.comboBoxChart_AAR.Size = new System.Drawing.Size(101, 21);
+            this.comboBoxChart_AAR.TabIndex = 12;
             // 
             // label10
             // 
@@ -354,12 +354,12 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
             this.buttonChart.UseVisualStyleBackColor = true;
             this.buttonChart.Click += new System.EventHandler(this.buttonChart_Click);
             // 
-            // comboBoxSortInput
+            // comboBoxSortInput_AAR
             // 
-            this.comboBoxSortInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxSortInput.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSortInput.FormattingEnabled = true;
-            this.comboBoxSortInput.Items.AddRange(new object[] {
+            this.comboBoxSortInput_AAR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxSortInput_AAR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxSortInput_AAR.FormattingEnabled = true;
+            this.comboBoxSortInput_AAR.Items.AddRange(new object[] {
             "Apartment",
             "Entrance",
             "Fullarea",
@@ -370,10 +370,10 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
             "Members",
             "Children",
             "Debt"});
-            this.comboBoxSortInput.Location = new System.Drawing.Point(270, 68);
-            this.comboBoxSortInput.Name = "comboBoxSortInput";
-            this.comboBoxSortInput.Size = new System.Drawing.Size(101, 21);
-            this.comboBoxSortInput.TabIndex = 9;
+            this.comboBoxSortInput_AAR.Location = new System.Drawing.Point(270, 68);
+            this.comboBoxSortInput_AAR.Name = "comboBoxSortInput_AAR";
+            this.comboBoxSortInput_AAR.Size = new System.Drawing.Size(101, 21);
+            this.comboBoxSortInput_AAR.TabIndex = 9;
             // 
             // label12
             // 
@@ -395,57 +395,57 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
             this.label11.TabIndex = 8;
             this.label11.Text = "Столбец";
             // 
-            // textBoxSearch
+            // textBoxSearch_AAR
             // 
-            this.textBoxSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSearch.Location = new System.Drawing.Point(270, 30);
-            this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(92, 20);
-            this.textBoxSearch.TabIndex = 5;
-            this.textBoxSearch.TextChanged += new System.EventHandler(this.textBox_Search_AAR_TextChanged);
+            this.textBoxSearch_AAR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxSearch_AAR.Location = new System.Drawing.Point(270, 30);
+            this.textBoxSearch_AAR.Name = "textBoxSearch_AAR";
+            this.textBoxSearch_AAR.Size = new System.Drawing.Size(92, 20);
+            this.textBoxSearch_AAR.TabIndex = 5;
+            this.textBoxSearch_AAR.TextChanged += new System.EventHandler(this.textBox_Search_AAR_TextChanged);
             // 
-            // buttonSort
+            // buttonSort_AAR
             // 
-            this.buttonSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSort.Location = new System.Drawing.Point(377, 69);
-            this.buttonSort.Name = "buttonSort";
-            this.buttonSort.Size = new System.Drawing.Size(92, 20);
-            this.buttonSort.TabIndex = 3;
-            this.buttonSort.Text = "Сортировка";
-            this.buttonSort.UseVisualStyleBackColor = true;
-            this.buttonSort.Click += new System.EventHandler(this.buttonSort_Click);
+            this.buttonSort_AAR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSort_AAR.Location = new System.Drawing.Point(377, 69);
+            this.buttonSort_AAR.Name = "buttonSort_AAR";
+            this.buttonSort_AAR.Size = new System.Drawing.Size(92, 20);
+            this.buttonSort_AAR.TabIndex = 3;
+            this.buttonSort_AAR.Text = "Сортировка";
+            this.buttonSort_AAR.UseVisualStyleBackColor = true;
+            this.buttonSort_AAR.Click += new System.EventHandler(this.buttonSort_Click);
             // 
-            // button5
+            // button5_AAR
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.Location = new System.Drawing.Point(475, 47);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(92, 42);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Редактировать";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5_AAR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5_AAR.Location = new System.Drawing.Point(475, 47);
+            this.button5_AAR.Name = "button5_AAR";
+            this.button5_AAR.Size = new System.Drawing.Size(92, 42);
+            this.button5_AAR.TabIndex = 4;
+            this.button5_AAR.Text = "Редактировать";
+            this.button5_AAR.UseVisualStyleBackColor = true;
+            this.button5_AAR.Click += new System.EventHandler(this.button5_Click);
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.dataGridViewInfo);
+            this.panel3.Controls.Add(this.dataGridViewInfo_AAR);
             this.panel3.Controls.Add(this.splitter1);
-            this.panel3.Controls.Add(this.chart1);
+            this.panel3.Controls.Add(this.chart_AAR);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(230, 105);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(570, 345);
             this.panel3.TabIndex = 6;
             // 
-            // dataGridViewInfo
+            // dataGridViewInfo_AAR
             // 
-            this.dataGridViewInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewInfo.Location = new System.Drawing.Point(280, 0);
-            this.dataGridViewInfo.Name = "dataGridViewInfo";
-            this.dataGridViewInfo.ReadOnly = true;
-            this.dataGridViewInfo.Size = new System.Drawing.Size(290, 345);
-            this.dataGridViewInfo.TabIndex = 7;
+            this.dataGridViewInfo_AAR.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewInfo_AAR.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewInfo_AAR.Location = new System.Drawing.Point(280, 0);
+            this.dataGridViewInfo_AAR.Name = "dataGridViewInfo_AAR";
+            this.dataGridViewInfo_AAR.ReadOnly = true;
+            this.dataGridViewInfo_AAR.Size = new System.Drawing.Size(290, 345);
+            this.dataGridViewInfo_AAR.TabIndex = 7;
             // 
             // splitter1
             // 
@@ -455,22 +455,22 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
             this.splitter1.TabIndex = 6;
             this.splitter1.TabStop = false;
             // 
-            // chart1
+            // chart_AAR
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            this.chart1.Dock = System.Windows.Forms.DockStyle.Left;
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(0, 0);
-            this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(270, 345);
-            this.chart1.TabIndex = 5;
-            this.chart1.Text = "chart1";
+            chartArea1.Name = "ChartArea1";
+            this.chart_AAR.ChartAreas.Add(chartArea1);
+            this.chart_AAR.Dock = System.Windows.Forms.DockStyle.Left;
+            legend1.Name = "Legend1";
+            this.chart_AAR.Legends.Add(legend1);
+            this.chart_AAR.Location = new System.Drawing.Point(0, 0);
+            this.chart_AAR.Name = "chart_AAR";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart_AAR.Series.Add(series1);
+            this.chart_AAR.Size = new System.Drawing.Size(270, 345);
+            this.chart_AAR.TabIndex = 5;
+            this.chart_AAR.Text = "chart1";
             // 
             // FormProducts
             // 
@@ -482,13 +482,14 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
             this.Controls.Add(this.panel1);
             this.Name = "FormProducts";
             this.Text = "FormProducts";
+            this.Load += new System.EventHandler(this.FormProducts_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInfo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInfo_AAR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_AAR)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -496,7 +497,7 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox checkBoxDebt;
+        private System.Windows.Forms.CheckBox checkBoxDebt_AAR;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;
@@ -504,33 +505,33 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxChildren;
-        private System.Windows.Forms.TextBox textBoxMembers;
+        private System.Windows.Forms.TextBox textBoxChildren_AAR;
+        private System.Windows.Forms.TextBox textBoxMembers_AAR;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxDate;
-        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.TextBox textBoxDate_AAR;
+        private System.Windows.Forms.TextBox textBoxName_AAR;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxUsefularea;
-        private System.Windows.Forms.TextBox textBoxRooms;
-        private System.Windows.Forms.TextBox textBoxFullarea;
-        private System.Windows.Forms.TextBox textBoxEntrance;
-        private System.Windows.Forms.TextBox textBoxApartment;
-        private System.Windows.Forms.Button buttonDelete;
-        private System.Windows.Forms.Button buttonSaveFile;
-        private System.Windows.Forms.Button buttonOpenFile;
-        private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.TextBox textBoxUsefularea_AAR;
+        private System.Windows.Forms.TextBox textBoxRooms_AAR;
+        private System.Windows.Forms.TextBox textBoxFullarea_AAR;
+        private System.Windows.Forms.TextBox textBoxEntrance_AAR;
+        private System.Windows.Forms.TextBox textBoxApartment_AAR;
+        private System.Windows.Forms.Button buttonDelete_AAR;
+        private System.Windows.Forms.Button buttonSaveFile_AAR;
+        private System.Windows.Forms.Button buttonOpenFile_AAR;
+        private System.Windows.Forms.Button buttonAdd_AAR;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBoxSearch;
-        private System.Windows.Forms.Button buttonSort;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBoxSearch_AAR;
+        private System.Windows.Forms.Button buttonSort_AAR;
+        private System.Windows.Forms.Button button5_AAR;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ComboBox comboBoxSortInput;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.DataGridView dataGridViewInfo;
+        private System.Windows.Forms.ComboBox comboBoxSortInput_AAR;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_AAR;
+        private System.Windows.Forms.DataGridView dataGridViewInfo_AAR;
         private System.Windows.Forms.Splitter splitter1;
-        private System.Windows.Forms.ComboBox comboBoxChart;
+        private System.Windows.Forms.ComboBox comboBoxChart_AAR;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button buttonChart;
     }

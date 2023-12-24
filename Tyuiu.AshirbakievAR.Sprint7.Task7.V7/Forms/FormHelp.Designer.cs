@@ -490,6 +490,7 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7.Forms
             this.Controls.Add(this.buttonAdd);
             this.Name = "FormHelp";
             this.Text = "FormHelp";
+            this.Load += new System.EventHandler(this.FormHelp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

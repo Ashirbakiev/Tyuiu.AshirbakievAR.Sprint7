@@ -47,15 +47,18 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7
                     currentButton = (Button)button;
                     currentButton.BackColor = color;
                     currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-                    panelTitleBar.BackColor = color;
-                    panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
+                    panelTitleBar_AAR.BackColor = color;
+                    panelLogo_AAR.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
+                    ThemeColor.PrimaryColor = color;
+                    ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(color, -0.3);
+
                 }
             }
         }
 
         private void DisableButton()
         {
-            foreach (Control previousButton in panelMainMenu.Controls)
+            foreach (Control previousButton in panelMainMenu_AAR.Controls)
             {
                 if (previousButton.GetType() == typeof(Button))
                 {
@@ -77,8 +80,8 @@ namespace Tyuiu.AshirbakievAR.Sprint7.Task7.V7
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            this.panelDesktopPanel.Controls.Add(childForm);
-            this.panelDesktopPanel.Tag = childForm;
+            this.panelDesktopPanel_AAR.Controls.Add(childForm);
+            this.panelDesktopPanel_AAR.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }
